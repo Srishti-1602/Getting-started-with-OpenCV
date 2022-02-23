@@ -6,7 +6,6 @@ Some of the common terms used in the errors are very well explained in this [rep
 
 >tracker = cv2.Tracker_create(tracker_type) AttributeError: module 'cv2' has no attribute 'Tracker_create'
 
-
 This error occurs when you do not have the correct opencv library downloaded.
 You will need to uninstall the existing opencv library using `pip uninstall opencv-python`, if you have already downloaded    opencv-contrib-python library then you will have to uninstall that too using `pip uninstall opencv-contrib-python`, now       install opencv-contrib-python using `pip3 install opencv-contrib-python`.
 
@@ -17,3 +16,7 @@ This error occurs you use normal string as the path.
 This can be sorted by `adding 'r' in front` of the path.
 
 Eg: (r"D:\Document\OpenCV\race_car.mp4")
+
+> "execution_count": null,  NameError: name 'null' is not defined
+
+This error occurs when we save the file in different format and run in another (i saved the file in .IPYNB and tried to run it in .PY format). To avoid this error just copy the code from .IPYNB file and paste in new file and save this new file in .PY format.
